@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite CRM" verbose="1" >
+
+    <test name="Login Test CRM" parallel="methods">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.anhtester.testcases.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Dashboard Test CRM" parallel="methods">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.anhtester.testcases.DashboardTest"/>
+        </classes>
+    </test>
+
+    <test name="Customers Test CRM" parallel="methods">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.anhtester.testcases.CustomerTest"/>
+        </classes>
+    </test>
+</suite>

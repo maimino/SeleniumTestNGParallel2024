@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Suite " verbose="1" parallel="tests">
+
+    <test name="Test Parallel">
+        <classes>
+            <class name="com.anhtester.LearnParallelExecution.ParallelTest"/>
+        </classes>
+    </test>
+
+    <test name="Test Parallel2">
+        <classes>
+            <class name="com.anhtester.LearnParallelExecution.ParallelTest2"/>
+        </classes>
+    </test>
+
+</suite>
